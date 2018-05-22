@@ -1,0 +1,27 @@
+# coding=utf-8
+# 3.+有新的常量格式
+x = set('abcde')
+y = set('dexyz')
+print(x - y)
+print(x & y)
+print(x | y)
+print(x ^ y)
+print('e' in x)
+print(x > y, x < y)
+print(x)
+print(y)
+z = x.intersection(y)
+print(z)
+z.add('hello')
+print(z)
+z.update(set(['X', 'Y']))
+print(z)
+z.remove('X')
+print(z)
+t = set(['Y'])
+print(z.issubset(['Y']))
+print(t.issubset(z))
+
+# 序列里只有元组可以嵌入集合
+z.add((1, 2))
+print(z)
